@@ -2,6 +2,10 @@ language: c
 
 matrix:
   include:
+   - os: linux
+     dist: trusty
+   - os: linux
+     dist: xenial
    - os: windows
    - os: osx
 
