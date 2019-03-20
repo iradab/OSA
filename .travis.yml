@@ -9,24 +9,7 @@ matrix:
    - os: windows
    - os: osx
 
-addons:
-  apt:
-    packages:
-      - gcovr
-      - libcunit1-dev
-
-  homebrew:
-    packages:
-      - cunit
-      - gcovr
 
 script:
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
-      echo "Using LINUX" ;
-    fi
-
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
-      echo "Using MAC OS/X" ;
-    fi
   - gcc -o detecter detecter.c
   - ./detecter -c -i 10000 -l 4 -t "%H:%M:%S" ls -l /tmp
