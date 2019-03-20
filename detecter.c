@@ -65,7 +65,7 @@ void print_output(char *prevOutput,char *curOutput,size_t prevlen,size_t curlen)
 // prints exit code only if -c option included and if current exit code is different from previous
 void print_exit(int prevReturn,int curReturn,int n){             
          if (n== 0) printf ("exit %d\n", curReturn) ;              // if it is first iteration
-         else if (prevReturn != -1 && curReturn != curReturn) 
+         else if (prevReturn != -1 && curReturn != prevReturn) 
             printf ("exit %d\n", curReturn) ;
 }
 
