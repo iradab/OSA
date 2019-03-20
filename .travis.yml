@@ -6,7 +6,7 @@ matrix:
      dist: trusty
    - os: linux
      dist: xenial
-   - os: macos 
+   - os: windows
    - os: osx
 
 addons:
