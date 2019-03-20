@@ -28,4 +28,3 @@ script:
       echo "Using MAC OS/X" ;
     fi
   - ./detect -c -i 10000 -l 4 -t "%H:%M:%S" ls -l /tmp
-fi
