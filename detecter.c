@@ -47,7 +47,7 @@ void print_time (const char *timeFmt){
             fprintf(stderr, "Strftime error .. ]n") ;
             exit(1);
         }
-        printf ("%s \n", buf) ;
+        printf ("%s\n", buf) ;
     }
 }
 
@@ -58,8 +58,8 @@ void print_output(char *prevOutput,char *curOutput,size_t prevlen,size_t curlen)
         } 
         else if (prevlen != curlen || memcmp(prevOutput,curOutput,curlen) != 0){ // if current Output is different than previous
             fwrite(curOutput,curlen,1,stdout);
-            free(prevOutput) ;          
         }
+        free(prevOutput) ;          
 }
 
 // prints exit code only if -c option included and if current exit code is different from previous
