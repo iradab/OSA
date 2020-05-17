@@ -1,8 +1,6 @@
 /* ////////////////
 Operating System Architecture project
 Irada Bunyatova ////
-and             ////
-Sanan Najafov   ////
 *///////////////////
 
 #include <stdio.h>
